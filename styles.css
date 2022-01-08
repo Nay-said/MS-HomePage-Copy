@@ -1,6 +1,10 @@
 nav {
   padding: 0 80px;
 }
+.right-nav {
+  display: flex;
+  flex-direction: row;
+}
 .nav-link {
   color: black !important;
   font-size: 14px !important;
@@ -8,6 +12,12 @@ nav {
 .nav-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.container-fluid {
+  padding-right: 0 !important;
+}
+.signin .nav-link {
+  padding-right: 0 !important;
 }
 main {
   padding: 0 80px;
@@ -166,6 +176,7 @@ footer li:hover, footer span:hover {
   display: inline-block;
 }
 
+
 /* Media Query */
 @media screen and (max-width: 766px) {
   #carousel-caption-1, #carousel-caption-2,
@@ -222,6 +233,40 @@ footer li:hover, footer span:hover {
     margin-bottom: 10px;
   }
 }
+@media screen and (max-width: 992px) {
+  .container-fluid {
+    flex-wrap: nowrap !important;
+  }
+  .left-nav {
+    display: none !important;
+  }
+  .navbar-toggler {
+    order: 0;
+  }
+  .search {
+    order: 1;
+    flex: 1;
+  }
+  .navbar-brand {
+    order: 2;
+    flex: 15;
+    text-align: center;
+  }
+  .cart {
+    order: 3;
+    flex: 1;
+  }
+  .signin {
+    order: 4;
+    flex: 1;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container-fluid {
+    padding-left: 0 !important;
+  }
+}
 @media screen and (min-width: 1050px) {
   .cards-row {
     margin-right: 0 !important;
@@ -232,7 +277,8 @@ footer li:hover, footer span:hover {
 }
 @media screen and (max-width: 1050px) {
   nav {
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 0;
   }
   main {
     padding: 0;

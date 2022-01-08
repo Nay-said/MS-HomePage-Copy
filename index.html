@@ -12,58 +12,73 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: white !important;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Logo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- 1 -->
+      <button class="navbar-toggler" data-bs-toggle="collapse" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Microsoft 365</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Office</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Windows</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Surface</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Xbox</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sale</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
-          </li>
-        </ul>
-        <div class="d-flex">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <div class="dropdown">
-              <div class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                All Microsoft
-              </div>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </div>
-            </div>
-            <li class="nav-item">
-              <a class="nav-link">Search</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Cart</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Sign in</a>
-            </li>
-          </ul>
-        </ul>
+      <!-- 2 -->
+      <a class="navbar-brand" href="#">Logo</a>
+      <!-- Hide below lg -->
+      <ul class="left-nav navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Microsoft 365</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Office</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Windows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Surface</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Xbox</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Support</a>
+        </li>
+      </ul>
+      <!-- Hide below lg -->
+      <div class="dropdown d-none d-lg-block">
+        <div class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          All Microsoft
+        </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </div>
       </div>
+      <!-- 3 -->
+      <div class="search nav-item">
+        <a class="nav-link">
+          <span class="d-none d-xl-inline">Search</span>
+          <i class="bi bi-search"></i>
+        </a>
+      </div>
+      <!-- 4 -->
+      <div class="cart nav-item">
+        <span class="nav-item">
+          <a class="nav-link">
+            <span class="d-none d-xl-inline">Cart</span>
+            <i class="bi bi-cart3"></i>
+          </a>
+        </span>
+      </div>
+      <!-- 5 -->
+      <div class="signin nav-item">
+        <span class="nav-item">
+          <a class="nav-link">
+            <span class="d-none d-xl-inline">Sign in</span>
+            <i class="bi bi-person-plus"></i>
+          </a>
+        </span>
+      </div>
+     
     </div>
   </nav>
 
