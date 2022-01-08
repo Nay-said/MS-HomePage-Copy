@@ -1,0 +1,261 @@
+nav {
+  padding: 0 80px;
+}
+main {
+  padding: 0 80px;
+}
+#carousel {
+  margin-bottom: 90px;
+}
+#carousel img {
+  width: 100%;
+  height: auto;
+}
+.yellow-banner {
+  width: 150px;
+  height: 35px;
+  background-color: #fef000;
+  text-align: center;
+  padding: 5px;
+}
+#carousel-caption-1 {
+  width: 600px;
+  position: absolute;
+  top: 32%;
+  left: 56%;
+}
+#carousel-caption-2 {
+  width: 600px;
+  position: absolute;
+  top: 32%;
+  left: 6%;
+}
+#carousel-caption-1 h2, #carousel-caption-2 h2 {
+  font-size: 34px;
+  margin: 10px 0 15px 0;
+}
+.btn-black-short {
+  width: 150px;
+  height: 40px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+.btn-black-short:hover, .btn-black-long:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.btn-black-long {
+  width: 250px;
+  height: 45px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 8px;
+}
+#Icon-Bar {
+  width: 90%;
+  margin: 40px auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.bar-item {
+  width: 210px; 
+  padding: 0 15px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.bar-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.bar-item p {
+  margin: 0;
+  padding: 10px 20px 0 20px;
+  text-align: center;
+  white-space: normal;
+  font-size: 15px;
+}
+.cards-wrap {
+  margin: 30px 0;
+}
+.cards-wrap h6 {
+  margin-top: 45px;
+  padding-right: 10px;
+}
+.cards-wrap h4, h6 {
+  font-weight: bold;
+}
+.card-bdy {
+  cursor: pointer;
+}
+.cards-wrap p, a {
+  font-size: 15px;
+}
+.cards-wrap a {
+  text-decoration: none;
+  color: #005293;
+}
+.cards-wrap span:hover {
+  text-decoration: underline;
+}
+.row img {
+  width: 100%;
+}
+#big-img-wrap {
+  position: relative;
+}
+#big-img-caption {
+  position: absolute;
+  top: 36%;
+  left: 6%;
+  width: 38%;
+}
+#big-img-caption span:hover {
+  text-decoration: underline;
+}
+footer {
+  margin-top: 90p8;
+  padding: 35px 90px 10px 90px;
+  background-color: #f2f2f2;
+  color: #616161;
+}
+footer > div {
+  width: 100%;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  font-size: 12px;
+}
+footer li {
+  padding-bottom: 15px;
+}
+footer li:hover, footer span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#bottom {
+  display: flex;
+  font-size: 12px;
+}
+#lang {
+  width: 150px;
+}
+#ts-cs {
+  width: 80%;
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+#ts-cs span, #ts-cs p {
+  padding-right: 20px;
+  display: inline-block;
+}
+
+/* Media Query */
+@media screen and (max-width: 766px) {
+  #carousel-caption-1, #carousel-caption-2,
+  #big-img-caption {
+    width: 100%;
+    position: static;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #e6e6e6;
+    font-size: 15px;
+  }
+  .carousel-item h2, #big-img-caption h2 {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+  .btn-black-short, .yellow-banner {
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  .btn-black-long, .shop-headphone {
+    display: inline-block;
+  }
+  #Icon-Bar {
+    width: 100%;
+    white-space: normal;
+    padding-left: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .bar-item {
+    width: 100%;
+    height: 30px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .bar-item img {
+    width: 55%;
+  }
+  .bar-item > div {
+    display: inline-block;
+  }
+  .bar-item p {
+    display: inline;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .cards-row {
+    margin-right: 0 !important;
+  }
+  .cards-row > div:last-child {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1050px) {
+  nav {
+    padding: 0 30px;
+  }
+  main {
+    padding: 0;
+  }
+  .cards-wrap {
+    padding: 0 28px 0 30px;
+  }
+  .cards-row {
+    margin: 0;
+  }
+  footer {
+    padding: 35px 30px 10px 30px;
+  }
+  #bottom, #ts-cs {
+    display: block;
+    text-align: left;
+  }
+  #ts-cs {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    white-space: normal;
+  }
+  #ts-cs span, #ts-cs p {
+    display: inline-block;
+  }
+  #ts-cs span:first-child {
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 767px)  and (max-width: 1400px) {
+  #carousel-caption-1, #carousel-caption-2,
+  #big-img-caption {
+    top: 20%;
+  }
+}
+@media screen and (min-width: 769px)  and (max-width: 1600px) {
+  #carousel-caption-1, #carousel-caption-2 {
+    width: 380px;
+  }
+}
