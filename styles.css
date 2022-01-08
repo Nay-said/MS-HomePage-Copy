@@ -234,8 +234,12 @@ footer li:hover, footer span:hover {
   }
 }
 @media screen and (max-width: 992px) {
+  .navbar {
+    padding-left: 5px !important;
+  }
   .container-fluid {
     flex-wrap: nowrap !important;
+    padding-left: 0 !important;
   }
   .left-nav {
     display: none !important;
@@ -260,6 +264,10 @@ footer li:hover, footer span:hover {
     order: 4;
     flex: 1;
     padding-right: 10px;
+  }
+  #carousel-caption-1 p, #carousel-caption-2 p,
+  #big-img-caption p {
+    padding: 0 10px 0 10px;
   }
 }
 @media screen and (min-width: 992px) {
