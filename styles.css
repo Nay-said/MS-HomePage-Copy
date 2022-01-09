@@ -19,6 +19,9 @@ nav {
 .signin .nav-link {
   padding-right: 0 !important;
 }
+i {
+  font-size: 18px !important;
+}
 main {
   padding: 0 80px;
 }
@@ -236,13 +239,31 @@ footer li:hover, footer span:hover {
   }
   .container-fluid {
     flex-wrap: nowrap !important;
-    padding-left: 0 !important;
-  }
-  .left-nav {
-    display: none !important;
   }
   .navbar-toggler {
     order: 0;
+  }
+  #collapse-menu {
+    display: none;
+    -webkit-appearance: none;
+    moz-appearance: none;
+    appearance: none;
+  }
+  #menu-toggler:checked ~ #collapse-menu {
+    display: block;
+    list-style: none;
+    width: 100vw;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 990;
+    background-color: #F2F2F2;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+  #collapse-menu .nav-item {
+    height: 52px;
+    border-bottom: 1px solid #e6e6e6 ;
   }
   .search {
     order: 1;
@@ -262,6 +283,13 @@ footer li:hover, footer span:hover {
     flex: 1;
     padding-right: 10px;
   }
+  .left-nav {
+    order: 5;
+    display: none !important;
+  }
+  i {
+    font-size: 18px !important;
+  }
   #carousel-caption-1 p, #carousel-caption-2 p,
   #big-img-caption p {
     padding: 0 10px 0 10px;
@@ -270,6 +298,9 @@ footer li:hover, footer span:hover {
 @media screen and (min-width: 992px) {
   .container-fluid {
     padding-left: 0 !important;
+  }
+  #collapse-menu {
+    display: none;
   }
 }
 @media screen and (min-width: 1050px) {
