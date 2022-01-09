@@ -1,6 +1,10 @@
 nav {
   padding: 0 80px;
 }
+.navbar-brand {
+  width: 137px;
+  padding: 0 10px 10px 10px;
+}
 .right-nav {
   display: flex;
   flex-direction: row;
@@ -272,7 +276,11 @@ footer li:hover, footer span:hover {
   .navbar-brand {
     order: 2;
     flex: 15;
-    text-align: center;
+    padding-top: 0 !important;
+  }
+  .navbar-brand > div {
+    width: 100px;
+    margin: 0 auto;
   }
   .cart {
     order: 3;
