@@ -110,6 +110,7 @@ main {
 }
 .card-bdy {
   cursor: pointer;
+  margin-bottom: 20px;
 }
 .cards-wrap p, a {
   font-size: 15px;
@@ -225,10 +226,6 @@ footer li:hover, footer span:hover {
     font-size: 12px;
     padding-left: 0;
   }
-  .cards-row > div {
-    margin-bottom: 50px;
-  }
-
   .card-bdy p {
     margin-bottom: 10px;
   }
