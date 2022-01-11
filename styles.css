@@ -133,7 +133,7 @@ main {
   text-align: center;
   padding: 8px;
 }
-.btn-black-short:hover, .btn-black-long:hover {
+.btn-black-short > span:hover, .btn-black-long> span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -198,6 +198,9 @@ main {
 }
 .cards-wrap span:hover {
   text-decoration: underline;
+}
+.card-bdy span:hover, .btn-black-short > span:hover, .btn-black-long span:hover {
+  margin-right: 5px;
 }
 .scroll {
   width: 44px;
