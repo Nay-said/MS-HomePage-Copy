@@ -13,7 +13,7 @@ nav {
   color: black !important;
   font-size: 14px !important;
 }
-.nav-link:hover {
+.nav-link:hover{
   text-decoration: underline;
   cursor: pointer;
 }
@@ -55,6 +55,34 @@ nav {
   z-index: 999;
   background-color: #f2f2f2 !important;
   padding: 0 !important;
+}
+#search-box {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+}
+#search-box > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#search-box .navbar-brand {
+  margin-left: 80px;
+}
+#search-box input{
+  max-width: 1500px;
+}
+#cancel-button {
+  width: 75px;
+  height: 38px;
+  border: 1px solid #262626;
+  font-size: 15px;
+  background-color: #fff;
+  margin-right: 80px;
 }
 #site-map {
   height: 30px;
@@ -117,6 +145,10 @@ main {
   text-align: center;
   padding: 8px;
 }
+#Icon-Bar-wrap {
+  position: relative;
+
+}
 #Icon-Bar {
   width: 90%;
   margin: 40px auto;
@@ -166,6 +198,26 @@ main {
 }
 .cards-wrap span:hover {
   text-decoration: underline;
+}
+.scroll {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  opacity: .8;
+  position: absolute;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scroll-left {
+  display: none;
+  left: 20px;
+}
+#scroll-right {
+  display: none;
+  right: 20px;
 }
 .row img {
   width: 100%;
@@ -224,6 +276,15 @@ footer li:hover, footer span:hover {
 
 
 /* Media Query */
+@media screen and (max-width: 376px) {
+  .container-fluid {
+    padding-left: 0 !important;
+  }
+  .nav-link {
+    padding-left: 5px !important;
+    padding-right: 8px !important;
+  }
+}
 @media screen and (max-width: 766px) {
   #carousel-caption-1, #carousel-caption-2,
   #big-img-caption {
@@ -307,6 +368,10 @@ footer li:hover, footer span:hover {
     height: 52px;
     border-bottom: 1px solid #e6e6e6 ;
   }
+  #search-box > div {
+    justify-content: start;
+    margin-left: 20px;
+  }
   .search {
     order: 1;
     flex: 1;
@@ -329,7 +394,7 @@ footer li:hover, footer span:hover {
     flex: 1;
     padding-right: 10px;
   }
-  .left-nav {
+  #left-nav {
     order: 5;
     display: none !important;
   }
@@ -360,10 +425,13 @@ footer li:hover, footer span:hover {
 @media screen and (max-width: 1050px) {
   nav {
     padding-left: 20px;
-    padding-right: 0;
+    padding-right: 20px;
   }
   #dropdwn-menu:checked ~ .all-microsoft-menu {
     left: -60vw !important;
+  }
+  #search-box navbar-brand {
+    margin-left: 0;
   }
   main {
     padding: 0;
@@ -394,7 +462,7 @@ footer li:hover, footer span:hover {
     padding-right: 0;
   }
 }
-@media screen and (min-width: 767px)  and (max-width: 1400px) {
+@media screen and (min-width: 767px) and (max-width: 1400px) {
   #carousel-caption-1, #carousel-caption-2,
   #big-img-caption {
     top: 20%;
@@ -403,5 +471,10 @@ footer li:hover, footer span:hover {
 @media screen and (min-width: 769px)  and (max-width: 1600px) {
   #carousel-caption-1, #carousel-caption-2 {
     width: 380px;
+  }
+}
+@media screen and (min-width: 766px)  and (max-width: 1586px) {
+  #scroll-left, #scroll-right {
+    display: flex;
   }
 }
