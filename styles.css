@@ -133,7 +133,7 @@ main {
   text-align: center;
   padding: 8px;
 }
-.btn-black-short > span:hover, .btn-black-long> span:hover {
+.btn-black-short > span:hover, .btn-black-long > b:hover, .shop-headphone  b:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -194,12 +194,13 @@ main {
 }
 .cards-wrap a {
   text-decoration: none;
-  color: #005293;
+  color: #0067b8;
 }
 .cards-wrap span:hover {
   text-decoration: underline;
+  color: #005293;
 }
-.card-bdy span:hover, .btn-black-short > span:hover, .btn-black-long span:hover {
+.card-bdy span:hover, .btn-black-short > span:hover, .btn-black-long b:hover, .shop-headphone > span:hover {
   margin-right: 5px;
 }
 .scroll {
